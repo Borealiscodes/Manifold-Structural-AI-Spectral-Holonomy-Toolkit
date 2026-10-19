@@ -1,0 +1,115 @@
+{
+  "project": "Manifold-Structural-AI-Spectral-Holonomy-Toolkit",
+  "version": "0.1.0-pre",
+  "phases": [
+    {
+      "id": "0",
+      "name": "Repository Scaffolding",
+      "status": "complete",
+      "tasks": [
+        "Create repo structure",
+        "Add README with color tiles and altitude map",
+        "Add scaffolding in <pre> block",
+        "Add Lean/Rust/Python directories",
+        "Add preprint, meta-analysis, explainers"
+      ]
+    },
+    {
+      "id": "1",
+      "name": "Lean Verification Layer",
+      "status": "in-progress",
+      "domains": {
+        "geometry": ["drift invariants", "curvature tensors", "holonomy operators"],
+        "algebra": ["kernel fracture conditions", "non-dual constraints"],
+        "spectral": ["tearing admissibility", "phase stability"],
+        "conceptual": ["CPTP evolution", "conceptual drift constraints"],
+        "semantic": ["semantic holonomy", "CQOR invariants"],
+        "collapse": ["collapse surfaces", "unified residual"],
+        "tensors": ["triadic", "HSC", "SKP", "SH", "CH", "Grand"]
+      }
+    },
+    {
+      "id": "2",
+      "name": "Rust Runtime Envelopes",
+      "status": "pending",
+      "tasks": [
+        "Implement geometry envelopes",
+        "Implement algebra envelopes",
+        "Implement spectral envelopes",
+        "Implement conceptual envelopes",
+        "Implement semantic envelopes",
+        "Implement collapse envelopes",
+        "Implement tensor envelopes"
+      ]
+    },
+    {
+      "id": "3",
+      "name": "Python Public API",
+      "status": "pending",
+      "tasks": [
+        "Build PyO3 bindings",
+        "Create structural_ai package",
+        "Implement geometry API",
+        "Implement algebra API",
+        "Implement spectral API",
+        "Implement conceptual API",
+        "Implement semantic API",
+        "Implement collapse API",
+        "Implement tensor API",
+        "Add visualization and diagnostics"
+      ]
+    },
+    {
+      "id": "4",
+      "name": "Mechanistic Interpretability Bridge",
+      "status": "pending",
+      "tasks": [
+        "Circuit→manifold transforms",
+        "Feature→spectral bundle mapping",
+        "Head→conceptual drift mapping",
+        "Activation→semantic holonomy mapping"
+      ]
+    },
+    {
+      "id": "5",
+      "name": "Documentation & Examples",
+      "status": "pending",
+      "tasks": [
+        "API docs",
+        "Operator diagrams",
+        "Altitude map diagrams",
+        "Example notebooks",
+        "Public explainers"
+      ]
+    },
+    {
+      "id": "6",
+      "name": "Testing & Validation",
+      "status": "pending",
+      "tasks": [
+        "Lean proof tests",
+        "Rust unit tests",
+        "Python integration tests",
+        "MI compatibility tests",
+        "Tensor coherence tests"
+      ]
+    },
+    {
+      "id": "7",
+      "name": "Release",
+      "status": "pending",
+      "tasks": [
+        "Tag v0.1.0",
+        "Publish docs",
+        "Publish Python package",
+        "Publish Rust crate",
+        "Publish Lean package"
+      ]
+    }
+  ],
+  "provenance": {
+    "author": "Borealis S. Hedling",
+    "location": "Dublin, Ireland",
+    "date": "2026-10-19"
+  }
+}
