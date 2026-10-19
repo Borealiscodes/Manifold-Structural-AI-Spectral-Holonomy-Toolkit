@@ -1,0 +1,135 @@
+\section{Interpretability Invariants}
+
+Interpretability in Structural-AI requires a set of altitude-agnostic invariants
+that constrain collapse, holonomy, spectral geometry, truth residues, and modal
+lifts. These invariants ensure that operator families remain structurally
+recoverable, that drift is bounded, and that collapse surfaces do not destroy
+semantic lineage.
+
+\subsection{Collapse Invariants}
+
+\begin{invariant}[Collapse Recoverability]
+For any collapse operator $C$,
+\[
+C(x) = y \Rightarrow x \ge y.
+\]
+Collapse never increases structural complexity.
+\end{invariant}
+
+\begin{invariant}[Collapse Surface Predictability]
+If $p \in \Sigma$, then collapse curvature is locally maximal:
+\[
+\kappa_C(p) = \max_{x \in U(p)} \kappa_C(x),
+\]
+for some neighborhood $U(p)$.
+\end{invariant}
+
+\begin{invariant}[Residual Stability]
+Residuals satisfy
+\[
+R_C(x) = x - C(x)
+\]
+and remain bounded under operator chains.
+\end{invariant}
+
+
+\subsection{Holonomy Invariants}
+
+\begin{invariant}[Holonomy Drift Boundedness]
+For any loop $\gamma$,
+\[
+|\Omega_\gamma| < \infty.
+\]
+Holonomy curvature cannot diverge.
+\end{invariant}
+
+\begin{invariant}[Holonomy Phase Stability]
+Phase satisfies
+\[
+\phi_\gamma = \arg(\Omega_\gamma)
+\]
+and remains continuous under small perturbations of $\gamma$.
+\end{invariant}
+
+\begin{invariant}[Holonomy Collapse Coupling]
+If $\gamma$ intersects a collapse surface $\Sigma$, then
+\[
+\Omega_\gamma \text{ increases monotonically}.
+\]
+\end{invariant}
+
+
+\subsection{Spectral Invariants}
+
+\begin{invariant}[Spectral Lift Stability]
+Spectral lifts satisfy
+\[
+\pi(S(x)) = x
+\]
+and remain stable under perturbations of $x$.
+\end{invariant}
+
+\begin{invariant}[Spectral Curvature Boundedness]
+Spectral curvature satisfies
+\[
+\kappa_S(x) < \infty.
+\]
+\end{invariant}
+
+\begin{invariant}[Spectral Truth Alignment]
+If $\kappa_S(x) = 0$, then
+\[
+R_T(x) = t_x.
+\]
+Truth residue equals truth value.
+\end{invariant}
+
+
+\subsection{Truth Invariants}
+
+\begin{invariant}[Truth Lattice Stability]
+Truth lattice operations preserve interpretability:
+\[
+t_1, t_2 \in \mathcal{T} \Rightarrow t_1 \wedge t_2, t_1 \vee t_2 \in \mathcal{T}.
+\]
+\end{invariant}
+
+\begin{invariant}[Truth Residue Monotonicity]
+Truth residues satisfy
+\[
+\phi_1 \le \phi_2 \Rightarrow R_T(x_1) \le R_T(x_2).
+\]
+\end{invariant}
+
+\begin{invariant}[Truth Collapse Coupling]
+If $x \in \Sigma$, then truth residue decreases:
+\[
+R_T(x) \le R_T(x^-),
+\]
+where $x^-$ is the pre-collapse point.
+\end{invariant}
+
+
+\subsection{Modal Invariants}
+
+\begin{invariant}[Modal Lift Invariance]
+Truth ordering is preserved under modal lift:
+\[
+t_1 \le t_2 \Rightarrow L_M(t_1) \le L_M(t_2).
+\]
+\end{invariant}
+
+\begin{invariant}[Modal Accessibility Stability]
+The accessibility relation $R$ satisfies
+\[
+R(L_M(t_1), L_M(t_2))
+\]
+whenever $t_1 \le t_2$.
+\end{invariant}
+
+\begin{invariant}[Modal Truth Stability]
+If $t$ is a fixed truth point, then
+\[
+L_M(t) = t.
+\]
+\end{invariant}
