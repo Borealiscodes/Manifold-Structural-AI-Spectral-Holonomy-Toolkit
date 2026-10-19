@@ -1,14 +1,13 @@
-# 📘 README.md (Final Public‑Facing Version)
+# 📘 README.md
 
 Manifold‑Structural‑AI‑Spectral‑Holonomy‑Toolkit
-
 A Structural AI Interpretability Toolkit Bridging Geometry, Spectral Stability, Conceptual Drift, Semantic Holonomy, and Mechanistic Interpretability
 
 ---
 
 🚧 Under Construction — Active Research Toolkit 🏗️
 
-This repository is currently under active development.  
+This repository is under active development.  
 Some modules are placeholders, some operators are stubs, and the Lean/Rust/Python integration is being scaffolded.
 
 The toolkit is being built in three layers:
@@ -37,7 +36,7 @@ They behave like non‑Euclidean manifolds with:
 
 This toolkit provides a structural interpretability framework that makes these behaviors legible.
 
-It is designed to connect Structural AI Interpretability with Mechanistic Interpretability, forming a full‑spectrum interpretability ecosystem.
+It connects Structural AI Interpretability with Mechanistic Interpretability, forming a full‑spectrum interpretability ecosystem.
 
 > Mechanistic Interpretability explains the circuits.  
 > Structural AI Interpretability explains the geometry those circuits inhabit.
@@ -57,7 +56,7 @@ It is designed to connect Structural AI Interpretability with Mechanistic Interp
 | ⚫ Black | Tensors | Multi‑rank structural tensors |
 | 🌈 Multicolor | Integration | Cross‑altitude coherence |
 
-These tiles appear throughout the toolkit to support accessibility, ND‑friendly spectral reasoning, and non‑linear cognitive navigation.
+These tiles support accessibility, ND‑friendly spectral reasoning, and non‑linear cognitive navigation.
 
 ---
 
@@ -116,6 +115,35 @@ Proves:
 - semantic holonomy constraints  
 - collapse–repair–reintegration soundness  
 
+Includes the HallucinationGuard system:
+
+- Guard macro  
+- GeometryCheck  
+- AlgebraCheck  
+- SpectralCheck  
+- ConceptualCheck  
+- SemanticCheck  
+- CollapseCheck  
+- TensorCheck  
+
+And operator modules:
+
+- Drift  
+- Curvature  
+- Holonomy  
+- Kernel  
+- NonDual  
+- Tearing  
+- Phase  
+- CPTP  
+- ConceptualDrift  
+- SemanticHolonomy  
+- CQOR  
+- CollapseResiduals  
+- Reintegration  
+
+---
+
 Rust (Runtime Layer)
 Implements:
 
@@ -124,6 +152,8 @@ Implements:
 - safe spectral operators  
 - verified conceptual evolution  
 - semantic governance primitives  
+
+---
 
 Python (Toolkit Layer)
 Exposes:
@@ -178,15 +208,35 @@ manifold-structural-ai-spectral-holonomy-toolkit/
 ├── lean/
 │   ├── Lakefile.lean
 │   ├── src/
-│   │   ├── Geometry/
-│   │   ├── Algebra/
-│   │   ├── Spectral/
-│   │   ├── Conceptual/
-│   │   ├── Semantic/
-│   │   ├── Collapse/
-│   │   └── Tensors/
+│   │   ├── HallucinationGuard/
+│   │   │   ├── Guard.lean
+│   │   │   ├── GeometryCheck.lean
+│   │   │   ├── AlgebraCheck.lean
+│   │   │   ├── SpectralCheck.lean
+│   │   │   ├── ConceptualCheck.lean
+│   │   │   ├── SemanticCheck.lean
+│   │   │   ├── CollapseCheck.lean
+│   │   │   └── TensorCheck.lean
+│   │   │
+│   │   ├── Operators/
+│   │   │   ├── Drift.lean
+│   │   │   ├── Curvature.lean
+│   │   │   ├── Holonomy.lean
+│   │   │   ├── Kernel.lean
+│   │   │   ├── NonDual.lean
+│   │   │   ├── Tearing.lean
+│   │   │   ├── Phase.lean
+│   │   │   ├── CPTP.lean
+│   │   │   ├── ConceptualDrift.lean
+│   │   │   ├── SemanticHolonomy.lean
+│   │   │   ├── CQOR.lean
+│   │   │   ├── CollapseResiduals.lean
+│   │   │   └── Reintegration.lean
 │   │
 │   └── tests/
+│       ├── guard/
+│       ├── operators/
+│       └── integration/
 │
 ├── rust/
 │   ├── src/
