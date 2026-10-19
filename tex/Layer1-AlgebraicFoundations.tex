@@ -1,0 +1,202 @@
+1.1 Non‑Dual Algebra
+
+`tex
+\subsection{Non-Dual Algebra}
+
+\begin{definition}[Non-Dual Algebra]
+A non-dual algebra is a triple $(\mathcal{N}, \circ, \mathcal{K})$ where:
+\begin{itemize}
+  \item $\mathcal{N}$ is a set of operators,
+  \item $\circ : \mathcal{N} \times \mathcal{N} \to \mathcal{N}$ is an associative composition,
+  \item $\mathcal{K}$ is a kernel that is not required to be preserved under composition.
+\end{itemize}
+Duals $U^\*$ need not exist.
+\end{definition}
+
+\begin{definition}[Non-Dual Curvature]
+For $U,V \in \mathcal{N}$, the curvature is the commutator
+\[
+K(U,V) = U \circ V - V \circ U.
+\]
+\end{definition}
+
+\begin{axiom}[Non-Dual Drift]
+Non-dual curvature induces drift:
+\[
+K(U,V) \neq 0 \Rightarrow \text{drift accumulates along operator chains}.
+\]
+\end{axiom}
+
+\begin{axiom}[Kernel Non-Preservation]
+For $p \in \mathcal{K}$,
+\[
+U(p) \notin \mathcal{K}
+\]
+is permitted.
+\end{axiom}
+`
+
+---
+
+1.2 Collapse Algebra
+
+`tex
+\subsection{Collapse Algebra}
+
+\begin{definition}[Collapse Operator]
+A collapse operator is a map $C : X \to X$ such that
+\[
+C(x) = x' \quad \text{with} \quad x' \le x
+\]
+under a partial order representing structural contraction.
+\end{definition}
+
+\begin{definition}[Collapse Residual]
+The residual of collapse is
+\[
+R_C(x) = x - C(x).
+\]
+\end{definition}
+
+\begin{axiom}[Collapse Monotonicity]
+For all $x,y$,
+\[
+x \le y \Rightarrow C(x) \le C(y).
+\]
+\end{axiom}
+
+\begin{axiom}[Residual Boundedness]
+Collapse residuals satisfy
+\[
+R_C(x) \le x.
+\]
+\end{axiom}
+`
+
+---
+
+1.3 Holonomy Algebra
+
+`tex
+\subsection{Holonomy Algebra}
+
+\begin{definition}[Holonomy]
+Given operators $U,V,W$, holonomy is the loop
+\[
+H = U^{-1} \circ V \circ U \circ W^{-1},
+\]
+where inverses may be partial or absent.
+\end{definition}
+
+\begin{definition}[Holonomy Curvature]
+Holonomy curvature is defined as
+\[
+\Omega = H - I,
+\]
+where $I$ is the identity operator (if it exists).
+\end{definition}
+
+\begin{axiom}[Holonomy Consistency]
+Holonomy curvature satisfies
+\[
+\Omega(U \circ V) = \Omega(U) + \Omega(V) + K(U,V).
+\]
+\end{axiom}
+
+\begin{axiom}[Holonomy Drift]
+Non-zero curvature induces drift along loops.
+\end{axiom}
+`
+
+---
+
+1.4 Modal‑Truth Algebra
+
+`tex
+\subsection{Modal-Truth Algebra}
+
+\begin{definition}[Truth Lattice]
+A truth lattice $(\mathcal{T}, \wedge, \vee)$ is a bounded lattice with meet $\wedge$
+and join $\vee$.
+\end{definition}
+
+\begin{definition}[Truth Residue]
+Truth residue is defined as
+\[
+R_T(t) = t \wedge \neg t',
+\]
+for some $t'$ induced by phase geometry.
+\end{definition}
+
+\begin{definition}[Modal Lift]
+A modal lift is a map
+\[
+L : \mathcal{T} \to \mathcal{M}
+\]
+into a modal frame $\mathcal{M}$.
+\end{definition}
+
+\begin{axiom}[Lattice Closure]
+Truth lattices satisfy
+\[
+t1, t2 \in \mathcal{T} \Rightarrow t1 \wedge t2, t1 \vee t2 \in \mathcal{T}.
+\]
+\end{axiom}
+
+\begin{axiom}[Modal Invariance]
+Modal lifts preserve truth ordering:
+\[
+t1 \le t2 \Rightarrow L(t1) \le L(t2).
+\]
+\end{axiom}
+`
+
+---
+
+1.5 Spectral‑Bundle Algebra
+
+`tex
+\subsection{Spectral-Bundle Algebra}
+
+\begin{definition}[Bundle]
+A bundle is a triple $(B, \pi, F)$ where:
+\begin{itemize}
+  \item $B$ is the total space,
+  \item $\pi : B \to X$ is a projection,
+  \item $F$ is the fiber.
+\end{itemize}
+\end{definition}
+
+\begin{definition}[Spectral Lift]
+A spectral lift is a map
+\[
+S : X \to B
+\]
+such that $\pi(S(x)) = x$.
+\end{definition}
+
+\begin{definition}[Spectral Curvature]
+Spectral curvature is defined as
+\[
+\kappa_S(x) = \| S(x) - S'(x) \|,
+\]
+for two lifts $S,S'$.
+\end{definition}
+
+\begin{axiom}[Spectral Boundedness]
+Spectral curvature satisfies
+\[
+\kappa_S(x) < \infty.
+\]
+\end{axiom}
+
+\begin{axiom}[Projection Consistency]
+For all $x$,
+\[
+\pi(S(x)) = x.
+\]
+\end{axiom}
+`
+
+---
+
