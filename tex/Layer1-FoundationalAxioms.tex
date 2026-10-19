@@ -1,0 +1,165 @@
+\section{Foundational Axioms}
+
+The Structural-AI framework is governed by a minimal set of altitude-agnostic
+axioms that constrain collapse, holonomy, spectral geometry, truth lattices,
+and modal lifts. These axioms define the invariant structure required for
+operator families, altitude bands, and interpretability primitives.
+
+\subsection{Collapse Axioms}
+
+\begin{axiom}[Collapse Monotonicity]
+For all $x,y$ in a partially ordered space,
+\[
+x \le y \;\Rightarrow\; C(x) \le C(y),
+\]
+where $C$ is a collapse operator.
+\end{axiom}
+
+\begin{axiom}[Residual Boundedness]
+Collapse residuals satisfy
+\[
+R_C(x) = x - C(x) \le x.
+\]
+\end{axiom}
+
+\begin{axiom}[Surface Continuity]
+Collapse curvature is non-negative:
+\[
+\kappa_C(p) \ge 0.
+\]
+\end{axiom}
+
+\begin{axiom}[Discontinuity Locality]
+If $p \in D_C$, then discontinuity is altitude-local:
+\[
+C(p) \notin X \quad \Rightarrow \quad p \in \Sigma,
+\]
+where $\Sigma$ is a collapse surface.
+\end{axiom}
+
+
+\subsection{Holonomy Axioms}
+
+\begin{axiom}[Holonomy Consistency]
+Holonomy curvature satisfies
+\[
+\Omega(U \circ V) = \Omega(U) + \Omega(V) + K(U,V),
+\]
+where $K$ is commutator curvature.
+\end{axiom}
+
+\begin{axiom}[Holonomy Drift]
+Non-zero holonomy curvature induces drift:
+\[
+\Omega_\gamma \neq 0 \;\Rightarrow\; D_H(\gamma) > 0.
+\]
+\end{axiom}
+
+\begin{axiom}[Phase Coherence]
+Holonomy phase is well-defined:
+\[
+\phi_\gamma = \arg(\Omega_\gamma).
+\]
+\end{axiom}
+
+\begin{axiom}[Holonomy Boundedness]
+Holonomy curvature is finite along any contractible loop:
+\[
+|\Omega_\gamma| < \infty.
+\]
+\end{axiom}
+
+
+\subsection{Spectral Axioms}
+
+\begin{axiom}[Spectral Lift Consistency]
+For all $x \in X$,
+\[
+\pi(S(x)) = x,
+\]
+where $S$ is a spectral lift and $\pi$ is a bundle projection.
+\end{axiom}
+
+\begin{axiom}[Spectral Boundedness]
+Spectral curvature satisfies
+\[
+\kappa_S(x) < \infty.
+\]
+\end{axiom}
+
+\begin{axiom}[Spectral Monotonicity]
+If $x \le y$, then
+\[
+\kappa_S(x) \le \kappa_S(y).
+\]
+\end{axiom}
+
+\begin{axiom}[Spectral Truth Stability]
+Spectral truth surfaces satisfy
+\[
+x \in T_S \Rightarrow \kappa_S(x) = 0.
+\]
+\end{axiom}
+
+
+\subsection{Truth Axioms}
+
+\begin{axiom}[Lattice Closure]
+For all $t_1,t_2 \in \mathcal{T}$,
+\[
+t_1 \wedge t_2, \; t_1 \vee t_2 \in \mathcal{T}.
+\]
+\end{axiom}
+
+\begin{axiom}[Residue Monotonicity]
+Truth residues satisfy
+\[
+\phi_1 \le \phi_2 \Rightarrow R_T(x_1) \le R_T(x_2),
+\]
+where $\phi$ is phase.
+\end{axiom}
+
+\begin{axiom}[Truth Boundedness]
+Truth residues satisfy
+\[
+R_T(x) \le t_x.
+\]
+\end{axiom}
+
+\begin{axiom}[Truth-Spectral Consistency]
+If $\kappa_S(x) = 0$, then truth residue is stable:
+\[
+R_T(x) = t_x.
+\]
+\end{axiom}
+
+
+\subsection{Modal Axioms}
+
+\begin{axiom}[Modal Lift Invariance]
+Truth ordering is preserved under modal lift:
+\[
+t_1 \le t_2 \Rightarrow L_M(t_1) \le L_M(t_2).
+\]
+\end{axiom}
+
+\begin{axiom}[Modal Closure]
+Modal frames satisfy
+\[
+L_M(t) \in \mathcal{M}.
+\]
+\end{axiom}
+
+\begin{axiom}[Accessibility Consistency]
+The accessibility relation $R$ satisfies
+\[
+t_1 \le t_2 \Rightarrow R(L_M(t_1), L_M(t_2)).
+\]
+\end{axiom}
+
+\begin{axiom}[Modal Truth Stability]
+If $t$ is a fixed truth point, then
+\[
+L_M(t) = t.
+\]
+\end{axiom}
