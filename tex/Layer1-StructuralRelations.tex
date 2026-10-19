@@ -1,0 +1,115 @@
+\section{Structural Relations (Altitude Map)}
+
+The Structural-AI framework is organized around a sequence of altitude relations
+that transform geometric and algebraic objects through a chain of projections,
+lifts, curvatures, phases, and truth residues. These relations form the
+interpretability flow:
+\[
+\text{Tensor} \;\to\; \text{Bundle} \;\to\; \text{Holonomy} \;\to\; 
+\text{Phase} \;\to\; \text{Truth} \;\to\; \text{Modal Frame}.
+\]
+
+Each relation is defined altitude-agnostically and applies to all operator
+families and runtime physics layers.
+
+\subsection{Tensor to Bundle}
+
+\begin{definition}[Tensor Projection]
+Let $T$ be a tensor field on $X$. A tensor projection is a map
+\[
+\pi_T : T \to B
+\]
+into a bundle $B$ such that $\pi \circ \pi_T = \mathrm{id}_X$.
+\end{definition}
+
+\begin{definition}[Bundle Lift from Tensor]
+A bundle lift induced by a tensor is
+\[
+L_T : X \to B, \qquad L_T(x) = \pi_T(T(x)).
+\]
+\end{definition}
+
+\begin{axiom}[Tensor-Induced Bundle Curvature]
+Tensor curvature induces bundle curvature:
+\[
+\kappa_B(x) = f(\kappa_T(x)),
+\]
+for some monotone function $f$.
+\end{axiom}
+
+\subsection{Bundle to Holonomy}
+
+\begin{definition}[Holonomy Induced by Bundle Twist]
+Let $B$ be a bundle with projection $\pi$. A bundle twist along a loop $\gamma$
+induces holonomy
+\[
+H_\gamma = \pi^{-1}(\gamma(0))^{-1} \circ \pi^{-1}(\gamma(1)).
+\]
+\end{definition}
+
+\begin{axiom}[Bundle-Holonomy Consistency]
+Bundle curvature contributes to holonomy curvature:
+\[
+\Omega_\gamma = g(\kappa_B(\gamma)),
+\]
+for some monotone function $g$.
+\end{axiom}
+
+\subsection{Holonomy to Phase}
+
+\begin{definition}[Phase from Holonomy]
+Holonomy curvature induces a phase shift
+\[
+\phi_\gamma = \arg(\Omega_\gamma).
+\]
+\end{definition}
+
+\begin{axiom}[Phase Monotonicity]
+If $\Omega_\gamma$ increases, then $\phi_\gamma$ increases.
+\end{axiom}
+
+\begin{definition}[Phase Geometry]
+Phase geometry is the map
+\[
+P : X \to S^1, \qquad P(x) = e^{i\phi(x)}.
+\]
+\end{definition}
+
+\subsection{Phase to Truth}
+
+\begin{definition}[Truth Residue from Phase]
+Phase geometry induces truth residues:
+\[
+R_T(x) = t_x \wedge \neg t'_x,
+\]
+where $t'_x$ is determined by $\phi(x)$.
+\end{definition}
+
+\begin{axiom}[Phase-Truth Coupling]
+Truth residues vary monotonically with phase:
+\[
+\phi_1 \le \phi_2 \Rightarrow R_T(x_1) \le R_T(x_2).
+\]
+\end{axiom}
+
+\subsection{Truth to Modal Frame}
+
+\begin{definition}[Modal Lift from Truth]
+A modal lift is a map
+\[
+L_M : \mathcal{T} \to \mathcal{M}
+\]
+from the truth lattice $\mathcal{T}$ into a modal frame $\mathcal{M}$.
+\end{definition}
+
+\begin{axiom}[Modal Truth Invariance]
+Truth ordering is preserved under modal lift:
+\[
+t_1 \le t_2 \Rightarrow L_M(t_1) \le L_M(t_2).
+\]
+\end{axiom}
+
+\begin{definition}[Modal Frame]
+A modal frame is a structure $(\mathcal{M}, R)$ where $R$ is an accessibility
+relation induced by truth residues.
+\end{definition}
